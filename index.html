@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CULINARY DELIGHTS</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- GSAP and ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="main-nav">
+        <div class="container">
+            <h1 class="logo">CULINARY <span>DELIGHTS</span></h1>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#breakfast" class="nav-link">Breakfast</a></li>
+                <li><a href="#lunch" class="nav-link">Lunch</a></li>
+                <li><a href="#dinner" class="nav-link">Dinner</a></li>
+                <li><a href="#beverages" class="nav-link">Beverages</a></li>
+                <li><a href="#dessert" class="nav-link">Dessert</a></li>
+                <li><a href="#indian" class="nav-link">Indian</a></li>
+                <li><a href="#italian" class="nav-link">Italian</a></li>
+                <li><a href="#chinese" class="nav-link">Chinese</a></li>
+                <li><a href="#mexican" class="nav-link">Mexican</a></li>
+                <li><a href="what-to-make.html" class="nav-link highlight">What To Make</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Parallax Background -->
+    <div class="parallax-bg">
+        <div class="overlay"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">CULINARY <span>DELIGHTS</span></h1>
+            <p class="hero-subtitle">Discover the art of exquisite flavors and culinary masterpieces</p>
+            <button class="hero-cta" onclick="scrollToContent()">Explore Menu</button>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Food Sections -->
+    <div class="container">
+        <!-- Breakfast Section -->
+        <section id="breakfast" class="food-section">
+            <h2 class="section-title">Breakfast</h2>
+            <div class="section-line"></div>
+            <div class="food-grid" id="breakfast-grid">
+                <!-- Items will be loaded by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Lunch Section -->
+        <section id="lunch" class="food-section">
+            <h2 class="section-title">Lunch</h2>
+            <div class="section-line"></div>
+            <div class="food-grid" id="lunch-grid">
+                <!-- Items will be loaded by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Dinner Section -->
+        <section id="dinner" class="food-section">
+            <h2 class="section-title">Dinner</h2>
+            <div class="section-line"></div>
+            <div class="food-grid" id="dinner-grid">
+                <!-- Items will be loaded by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Beverages Section -->
+        <section id="beverages" class="food-section">
+            <h2 class="section-title">Beverages</h2>
+            <div class="section-line"></div>
+            <div class="food-grid" id="beverages-grid">
+                <!-- Items will be loaded by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Dessert Section -->
+        <section id="dessert" class="food-section">
+            <h2 class="section-title">Dessert</h2>
+            <div class="section-line"></div>
+            <div class="food-grid" id="dessert-grid">
+                <!-- Items will be loaded by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Indian Cuisine Section -->
+        <section id="indian" class="food-section">
+            <h2 class="section-title">Indian Cuisine</h2>
+            <div class="section-line"></div>
+            <div class="food-grid" id="indian-grid">
+                <!-- Items will be loaded by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Italian Cuisine Section -->
+        <section id="italian" class="food-section">
+            <h2 class="section-title">Italian Cuisine</h2>
+            <div class="section-line"></div>
+            <div class="food-grid" id="italian-grid">
+                <!-- Items will be loaded by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Chinese Cuisine Section -->
+        <section id="chinese" class="food-section">
+            <h2 class="section-title">Chinese Cuisine</h2>
+            <div class="section-line"></div>
+            <div class="food-grid" id="chinese-grid">
+                <!-- Items will be loaded by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Mexican Cuisine Section -->
+        <section id="mexican" class="food-section">
+            <h2 class="section-title">Mexican Cuisine</h2>
+            <div class="section-line"></div>
+            <div class="food-grid" id="mexican-grid">
+                <!-- Items will be loaded by JavaScript -->
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>CULINARY <span>DELIGHTS</span></h2>
+                    <p>Discover the finest culinary experiences</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#breakfast">Breakfast</a>
+                    <a href="#lunch">Lunch</a>
+                    <a href="#dinner">Dinner</a>
+                    <a href="what-to-make.html">What To Make</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; <span id="year"></span> CULINARY DELIGHTS. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/food-data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

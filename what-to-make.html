@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What To Make Today - CULINARY DELIGHTS</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/what-to-make.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- GSAP and ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="main-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">
+                <i class="fas fa-arrow-left"></i>
+                <span>Back to Home</span>
+            </a>
+            <h1 class="logo">CULINARY <span>DELIGHTS</span></h1>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#breakfast" class="nav-link">Breakfast</a></li>
+                <li><a href="index.html#lunch" class="nav-link">Lunch</a></li>
+                <li><a href="index.html#dinner" class="nav-link">Dinner</a></li>
+                <li><a href="index.html#beverages" class="nav-link">Beverages</a></li>
+                <li><a href="index.html#dessert" class="nav-link">Dessert</a></li>
+                <li><a href="what-to-make.html" class="nav-link highlight">What To Make</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="recipe-hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">What To Make <span>Today?</span></h1>
+            <p class="hero-subtitle">Enter the ingredients you have available, and we'll suggest delicious recipes you can make right now.</p>
+        </div>
+    </section>
+
+    <!-- Ingredient Search Section -->
+    <section id="ingredient-search">
+        <div class="container">
+            <div class="search-container">
+                <h2>Your Ingredients</h2>
+                <p>Add the ingredients you have available in your kitchen</p>
+                
+                <div class="ingredient-form">
+                    <div class="input-group">
+                        <input type="text" id="ingredient-input" placeholder="Add an ingredient (e.g., chicken, tomato, rice)...">
+                        <button id="add-ingredient" class="btn-add">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                    <div id="error-message" class="error-message"></div>
+                    
+                    <div id="ingredients-list" class="ingredients-list">
+                        <!-- Ingredients will be added here dynamically -->
+                    </div>
+                    
+                    <button id="find-recipes" class="btn-primary">
+                        <i class="fas fa-search"></i> Find Recipes
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loading Indicator -->
+    <div id="loading" class="loading-container">
+        <div class="loading-spinner"></div>
+        <p>Searching for delicious recipes...</p>
+    </div>
+
+    <!-- Recipe Results Section -->
+    <section id="recipe-results">
+        <div class="container">
+            <h2 class="section-title">Recipe Suggestions</h2>
+            <p class="section-subtitle">Based on your ingredients, here are some delicious recipes you can make:</p>
+            
+            <div id="recipes-grid" class="recipes-grid">
+                <!-- Recipe cards will be added here dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>CULINARY <span>DELIGHTS</span></h2>
+                    <p>Discover the finest culinary experiences</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                    <a href="what-to-make.html">What To Make</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; <span id="year"></span> CULINARY DELIGHTS. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/what-to-make.js"></script>
+</body>
+</html>
